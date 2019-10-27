@@ -24,11 +24,11 @@ class SearchBar extends React.PureComponent {
     this.setState({
       searchInput,
     })
-    console.log(e.target.value)
   }
 
   onSubmitForm = (e) => {
     e.preventDefault()
+    this.props.onSubmitForm(this.state.searchInput)
   }
 
   render() {
