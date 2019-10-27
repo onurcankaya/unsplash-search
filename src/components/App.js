@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import SearchBar from './search-bar'
+import ImageList from './image-list'
 import { fetchMatchingImages } from '../services/api'
 
 const AppContainer = styled.div`
@@ -28,6 +29,7 @@ class App extends React.PureComponent {
     return (
       <AppContainer className="ui container">
         <SearchBar onSubmitForm={this.onSearchSubmit} />
+        <ImageList images={this.state.images} />
       </AppContainer>
     )
   }

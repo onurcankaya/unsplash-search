@@ -18,12 +18,10 @@ export const fetchMatchingImages = async (query = '') => {
 
   const mappedResults = results.map((result) => {
     return {
-      result: {
-        id: result.id,
-        url: result.urls.regular,
-        alt: result.alt_description,
-        createdAt: result.created_at,
-      },
+      id: result.id,
+      url: result.urls.regular,
+      alt: result.alt_description,
+      createdAt: result.created_at,
     }
   })
 
