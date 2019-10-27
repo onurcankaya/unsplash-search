@@ -21,6 +21,7 @@ class App extends React.PureComponent {
     this.setState({
       images: response,
     })
+    console.log(response)
   }
 
   render() {
