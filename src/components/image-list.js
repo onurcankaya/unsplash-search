@@ -16,9 +16,10 @@ class ImageList extends React.PureComponent {
 
     return (
       <ImageListContainer>
-        {images.map((image) => (
-          <ImageCard key={image.id} url={image.url} alt={image.alt} />
-        ))}
+        {images &&
+          images.map((image) => (
+            <ImageCard key={image.id} url={image.url} alt={image.alt} />
+          ))}
       </ImageListContainer>
     )
   }

@@ -16,14 +16,16 @@ export const fetchMatchingImages = async (query = '') => {
 
   const { results } = response.data
 
-  const mappedResults = results.map((result) => {
-    return {
-      id: result.id,
-      url: result.urls.regular,
-      alt: result.alt_description,
-      createdAt: result.created_at,
-    }
-  })
+  const mappedResults =
+    results &&
+    results.map((result) => {
+      return {
+        id: result.id,
+        url: result.urls.regular,
+        alt: result.alt_description,
+        createdAt: result.created_at,
+      }
+    })
 
   return mappedResults
 }
