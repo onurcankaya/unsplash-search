@@ -36,10 +36,11 @@ class SearchBar extends React.PureComponent {
       <SearchBarContainer className="ui segment">
         <SearchBarForm onSubmit={this.onSubmitForm} className="ui form">
           <SearchInputWrapper className="field">
-            <SearchInputLabel>Image Search</SearchInputLabel>
+            <SearchInputLabel>{`Unsplash Image Search`}</SearchInputLabel>
             <SearchInput
               onChange={this.onInputChange}
               value={this.state.searchInput}
+              placeholder={`Search`}
             />
           </SearchInputWrapper>
         </SearchBarForm>

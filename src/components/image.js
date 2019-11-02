@@ -3,9 +3,12 @@ import styled from 'styled-components'
 
 const ImageContainer = styled.div`
   grid-row-end: ${(props) => `span ${props.spans}`};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 const Image = styled.img`
-  width: 270px;
+  width: 250px;
   grid-row-end: span 2;
 `
 
