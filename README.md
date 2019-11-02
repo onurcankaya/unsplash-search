@@ -16,3 +16,5 @@ yarn start
 ```
 yarn test
 ```
+
+![app screenshot](/public/images/screenshot.png?raw=true "App Screenshot")
