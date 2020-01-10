@@ -40,7 +40,7 @@ class SearchBar extends React.PureComponent {
             <SearchInput
               onChange={this.onInputChange}
               value={this.state.searchInput}
-              placeholder={`Search`}
+              placeholder={`Type here to search for images in Unsplash...`}
             />
           </SearchInputWrapper>
         </SearchBarForm>
