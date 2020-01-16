@@ -18,8 +18,6 @@ class ImageList extends React.PureComponent {
   render() {
     const { images } = this.props
 
-    console.log(images)
-
     return (
       <ImageListContainer>
         {images.length > 0 ? (
